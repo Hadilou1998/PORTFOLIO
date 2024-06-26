@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './pages/Home.tsx';
+import Home from './pages/Home.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import 'animate.css';
@@ -9,7 +9,7 @@ import 'animate.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/skills",

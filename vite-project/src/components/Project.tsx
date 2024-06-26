@@ -1,4 +1,4 @@
-export default function Project({ projects }: string) {
+export default function Project({ projects }: any) {
     const listProjects = [
         {
             image: "https://placehold.it/400",
@@ -65,13 +65,13 @@ export default function Project({ projects }: string) {
     console.log(listProjects);
     return (
         <>
-            <div className="">
+            <div className="grid grid-cols-3 gap-5 px-5 py-10">
                 {
                     listProjects.map((p) => (
-                        <div className="">
-                            <img src={p.image} alt="" className="" />
-                            <h4 className="">{p.name}</h4>
-                            <p className="">{p.desc}</p>
+                        <div key={p.name} className="p-3 text-center border rounded-md border-neutral-700">
+                            <img src={p.image} alt="" className="mb-3" />
+                            <h4 className="text-slate-50">{p.name}</h4>
+                            <p className="text-slate-500">{p.desc}</p>
                         </div>
                     ))
                 }

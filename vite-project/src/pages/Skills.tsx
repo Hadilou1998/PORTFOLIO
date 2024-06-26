@@ -28,7 +28,7 @@ export default function Skills() {
                 <p className="leading-relaxed text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
                 numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
             </div>
-            <ul className="flex flex-wrap w-2/3">
+            <ul className="grid w-2/3 grid-cols-2">
                 {
                     listSkills.map((skill) => (
                         <li key={ skill.name }>

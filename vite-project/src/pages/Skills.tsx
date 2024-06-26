@@ -22,20 +22,27 @@ export default function Skills() {
         },
     ]
     return (
-        <>
+        <section>
             <div className="">
                 <h1>Skillset</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
                 numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
             </div>
-            <div className="">
-                <div className="">
-                    <img src="" alt="" />
-                    <h3 className="">Titre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat
-                    dolorum numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
-                </div>
-            </div>
-        </>
+            <ul>
+                {
+                    listSkills.map((skill) => (
+                        <li key={ skill.name }>
+                            <img 
+                            src={ skill.image } 
+                            alt={ skill.name + " logo "}
+                            width={ 32 } 
+                        />
+                            <h3 className="text-lg font-semibold text-white">{ skill.name }</h3>
+                            <p className="text-slate-600">{ skill.desc }</p>
+                        </li>
+                    ))
+                }
+            </ul>
+        </section>
     )
 }

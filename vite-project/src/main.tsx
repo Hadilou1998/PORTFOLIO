@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from './pages/Home.tsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import 'animate.css';
+import Home from './pages/Home.tsx';
+import Skills from './pages/Skills.tsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 
 // Création du router
 const router = createBrowserRouter([
@@ -13,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/skills",
-    element: <div className=''>Skills</div>,
+    element: <Skills />,
   },
   {
     path: "/contact",

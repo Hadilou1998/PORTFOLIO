@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Project from "../components/Project";
 
 export default function Skills() {
+    
+    const [choice, setChoice] = useState("Symfony");
+    
     const listSkills = [
         {
             name: "Symfony",
@@ -13,7 +17,7 @@ export default function Skills() {
             desc: "Node FullStack Framework for modern and robust web applications",
         },
         {
-            name: "React JS",
+            name: "React",
             image: "https://api.iconify.design/logos:react.svg?color=%23ffffff",
             desc: "JS Library for building UI web applications",
         },
@@ -23,6 +27,7 @@ export default function Skills() {
             desc: "CI/CD with GitHub Action, VPS mounting and administration",
         },
     ];
+    
     return (
         <>
             <section className="flex gap-5 px-5 py-10">
@@ -33,7 +38,11 @@ export default function Skills() {
                 </div>
                 <ul className="grid w-2/3 grid-cols-2">
                     {listSkills.map((skill) => (
-                        <li key={skill.name}>
+                        <li 
+                        key={skill.name}
+                        data-choice={skill.name}
+                        onClick={() => setChoice(skill.name)}
+                        >
                             <img
                                 className="transition ease-in-out hover:scale-125"
                                 src={skill.image} alt={skill.name + " logo "} width={32} />
@@ -44,7 +53,7 @@ export default function Skills() {
                 </ul>
             </section>
             <section>
-                    <Project projets={"All"} />
+                    <Project prop={choice}/>
             </section>
         </>
     )

@@ -1,0 +1,11 @@
+export default function Skills() {
+    return (
+        <>
+            <div className="">
+                <h1>Skillset</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
+                numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
+            </div>
+        </>
+    )
+}

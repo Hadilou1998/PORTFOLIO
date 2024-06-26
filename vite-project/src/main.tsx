@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
+import './animate.css';
 
 // Création du router
 const router = createBrowserRouter([
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/skills",
-    element: <div>Skills</div>,
+    element: <div className='animate__animated animate__bounce'>Skills</div>,
   },
   {
     path: "/contact",

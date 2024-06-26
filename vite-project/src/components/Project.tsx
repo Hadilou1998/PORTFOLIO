@@ -62,7 +62,14 @@ export default function Project({ projects }: any) {
         },
     ]
     
-    console.log(listProjects);
+    const results = listProjects.filter(
+        (project) => project.techno.some (
+            techno => techno.name === project.techno[0].name
+        )
+    );
+    
+    console.log(results);
+    
     return (
         <>
             <div className="grid grid-cols-3 gap-5 px-5 py-10">

@@ -1,3 +1,5 @@
+import "animate.css";
+
 export default function Skills() {
     const listSkills = [
         {
@@ -20,7 +22,7 @@ export default function Skills() {
             image: "https://api.iconify.design/logo:react.svg?color=%23ffffff",
             desc: "CI/CD with GitHub Action, VPS mounting and administration",
         },
-    ]
+    ];
     return (
         <section>
             <div className="">

@@ -1,72 +1,44 @@
-export default function Project({ projects }: any) {
+export default function Project({ prop }: any) {
     const listProjects = [
         {
             image: "https://placehold.it/400",
             name: "e-commerce Sneakers",
             desc: "E-commerce shop for Sneaker Family, a brand new operator of the best and most seeking sneakers in the world.",
-            techno: [
-                {name: "All"},
-                {name: "Symfony"},
-                {name: "DevOps"},
-            ],
+            techno: ["All","Symfony","DevOps"],
         },
         {
             image: "https://placehold.it/400",
             name: "Blog Platform",
             desc: "A platform for bloggers to share their thoughts and ideas with the world.",
-            techno: [
-                {name: "All"},
-                {name: "Adonis JS"},
-                {name: "React"},
-            ],
+            techno: ["All","Adonis JS","React"],
         },
         {
             image: "https://placehold.it/400",
             name: "Project Management Tool",
             desc: "A tool for managing projects, tasks, and teams.",
-            techno: [
-                {name: "All"},
-                {name: "Symfony"},
-                {name: "React"},
-            ],
+            techno: ["All","Symfony","React"],
         },
         {
             image: "https://placehold.it/400",
             name: "Automated Testing Platform",
             desc: "A platform for automating testing processes in software development.",
-            techno: [
-                {name: "All"},
-                {name: "Adonis JS"},
-                {name: "DevOps"},
-            ],
+            techno: ["All","Adonis JS","DevOps"],
         },
         {
             image: "https://placehold.it/400",
             name: "Healthcare Management System",
             desc: "A system for managing patient records and healthcare services.",
-            techno: [
-                {name: "All"},
-                {name: "Symfony"},
-                {name: "DevOps"},
-            ],
+            techno: ["All","Symfony","DevOps"],
         },
         {
             image: "https://placehold.it/400",
             name: "E-learning Platform",
             desc: "A platform for online learning and education.",
-            techno: [
-                {name: "All"},
-                {name: "Adonis JS"},
-                {name: "React"},
-            ],
+            techno: ["All","Adonis JS","React"],
         },
     ]
     
-    const results = listProjects.filter(
-        (p) => p.techno.some (
-            techno => techno.name === p.techno[0].name
-        )
-    );
+    const results = listProjects.filter((project) => project.techno.includes(prop));
     
     console.log(results);
     

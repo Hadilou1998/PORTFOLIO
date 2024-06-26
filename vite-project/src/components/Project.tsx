@@ -63,8 +63,8 @@ export default function Project({ projects }: any) {
     ]
     
     const results = listProjects.filter(
-        (project) => project.techno.some (
-            techno => techno.name === project.techno[0].name
+        (p) => p.techno.some (
+            techno => techno.name === p.techno[0].name
         )
     );
     

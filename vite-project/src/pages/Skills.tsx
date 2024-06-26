@@ -32,11 +32,10 @@ export default function Skills() {
                 {
                     listSkills.map((skill) => (
                         <li key={ skill.name }>
-                            <img 
-                            src={ skill.image } 
-                            alt={ skill.name + " logo "}
-                            width={ 32 } 
-                        />
+                            <img
+                                className="transition ease-in-out hover:scale-125"
+                                src={ skill.image } alt={ skill.name + " logo "} width={ 32 } 
+                            />
                             <h3 className="text-lg font-semibold text-white">{ skill.name }</h3>
                             <p className="text-slate-600">{ skill.desc }</p>
                         </li>

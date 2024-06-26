@@ -1,3 +1,5 @@
+import Project from "../components/Project";
+
 export default function Skills() {
     const listSkills = [
         {
@@ -22,26 +24,28 @@ export default function Skills() {
         },
     ];
     return (
-        <section className="flex gap-5 px-5 py-10">
-            <div className="w-1/3">
-                <h1 className="mb-5 text-3x1 font-bold text-white">Skillset</h1>
-                <p className="leading-relaxed text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
-                numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
-            </div>
-            <ul className="grid w-2/3 grid-cols-2">
-                {
-                    listSkills.map((skill) => (
-                        <li key={ skill.name }>
+        <>
+            <section className="flex gap-5 px-5 py-10">
+                <div className="w-1/3">
+                    <h1 className="mb-5 text-3x1 font-bold text-white">Skillset</h1>
+                    <p className="leading-relaxed text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum
+                        numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
+                </div>
+                <ul className="grid w-2/3 grid-cols-2">
+                    {listSkills.map((skill) => (
+                        <li key={skill.name}>
                             <img
                                 className="transition ease-in-out hover:scale-125"
-                                src={ skill.image } alt={ skill.name + " logo "} width={ 32 } 
-                            />
-                            <h3 className="text-lg font-semibold text-white">{ skill.name }</h3>
-                            <p className="text-slate-600">{ skill.desc }</p>
+                                src={skill.image} alt={skill.name + " logo "} width={32} />
+                            <h3 className="text-lg font-semibold text-white">{skill.name}</h3>
+                            <p className="text-slate-600">{skill.desc}</p>
                         </li>
-                    ))
-                }
-            </ul>
-        </section>
+                    ))}
+                </ul>
+            </section>
+            <section>
+                    <Project projets={"All"} />
+            </section>
+        </>
     )
 }

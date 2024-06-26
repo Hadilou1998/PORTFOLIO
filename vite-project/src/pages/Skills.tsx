@@ -22,13 +22,13 @@ export default function Skills() {
         },
     ];
     return (
-        <section>
-            <div className="">
-                <h1>Skillset</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
+        <section className="flex gap-5">
+            <div className="w-1/3">
+                <h1 className="texte-3x1 font-bold text-white">Skillset</h1>
+                <p className="leading-relaxed text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos sed sint incidunt accusamus officiis repellat dolorum 
                 numquam voluptate. Reprehenderit, sapiente laboriosam tenetur eligendi omnis nulla mollitia voluptatem sint dolorem?</p>
             </div>
-            <ul>
+            <ul className="flex flex-wrap w-2/3">
                 {
                     listSkills.map((skill) => (
                         <li key={ skill.name }>

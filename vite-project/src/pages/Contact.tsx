@@ -7,6 +7,11 @@ import Nav from '../components/Nav';
  * TODO: ajouter le formulaire de contact
  */
 export default function Contact() {
+
+    const test = () => {
+        console.log("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et nobis numquam alias. Unde, nostrum voluptatibus accusamus minima iste corrupti corporis rem porro doloremque cumque saepe officiis explicabo consectetur. Odio, nesciunt?");   
+    }
+    
     return (
         <main>
             <Nav />

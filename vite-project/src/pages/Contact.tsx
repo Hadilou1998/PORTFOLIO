@@ -11,7 +11,7 @@ export default function Contact() {
         <main>
             <Nav />
             <h1>Contact</h1>
-            <form>
+            <form className="max-w-1/2">
                 <div className="space-y-12">
                     <div className="pb-12 border-b border-gray-900/10">
                         <h2 className="text-base font-semibold leading-7">

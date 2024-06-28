@@ -11,7 +11,9 @@ export default function Contact() {
         <main>
             <Nav />
             <h1>Contact</h1>
-            <form className="pb-10 mx-auto min-w-1/3">
+            <form 
+            onSubmit={test} 
+            className="pb-10 mx-auto min-w-1/3">
                 <div className="">
                     <div className="pb-12 border-b border-gray-900/10">
                         <h2 className="text-base font-semibold leading-7">

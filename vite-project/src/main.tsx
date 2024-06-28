@@ -4,6 +4,7 @@ import './index.css';
 import 'animate.css';
 import Home from './pages/Home.tsx';
 import Skills from './pages/Skills.tsx';
+import Contact from './pages/Contact.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <div>Contact</div>,
+    element: <Contact />
   }
 ])
 

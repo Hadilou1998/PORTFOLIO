@@ -7,20 +7,18 @@ import Nav from '../components/Nav';
  * TODO: ajouter le formulaire de contact
  */
 export default function Contact() {
-
-    const test = () => {
-        console.log("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et nobis numquam alias. Unde, nostrum voluptatibus accusamus minima iste corrupti corporis rem porro doloremque cumque saepe officiis explicabo consectetur. Odio, nesciunt?");   
-    }
     
     return (
         <main>
             <Nav />
             <h1>Contact</h1>
             <form 
-            onSubmit={test} 
+            method='POST'
+            action='https://api.web3forms.com/submit' 
             className="pb-10 mx-auto min-w-1/3">
+                <input type="hidden" name="access_key" value="75291f2c-c43f-487e-a15e-3037d87fcea7"></input>
                 <div className="">
-                    <div className="pb-12 border-b border-gray-900/10">
+                    <div className="pb-12 border-b text-slate-100">
                         <h2 className="text-base font-semibold leading-7">
                             Fell free to contact me
                         </h2>

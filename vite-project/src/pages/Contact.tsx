@@ -11,7 +11,7 @@ export default function Contact() {
         <main>
             <Nav />
             <h1>Contact</h1>
-            <form className="pb-10 mx-auto min-w-1/2">
+            <form className="pb-10 mx-auto min-w-1/3">
                 <div className="">
                     <div className="pb-12 border-b border-gray-900/10">
                         <h2 className="text-base font-semibold leading-7">
@@ -105,7 +105,7 @@ export default function Contact() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-full">
+                            <div className="sm:col-span-3">
                                 <label
                                     htmlFor="message"
                                     className="block text-sm font-medium leading-6 text-slate-200"
@@ -122,7 +122,7 @@ export default function Contact() {
                                     />
                                 </div>
                             </div>
-                            <div className="flex items-center h-6">
+                            <div className="sm:col-span-4">
                                 <input
                                     id="comments"
                                     name="comments"
@@ -139,21 +139,20 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="flex items-center justify-end gap-x-6">
-                    <button
-                        type="button"
-                        className="text-sm font-semibold leading-6 text-slate-200"
-                    >
-                        Reset
-                    </button>
-                    <button
-                        type="submit"
-                        className="px-3 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ffffff" d="M3 20V4l19 8M5 17l11.85-5L5 7v3.5l6 1.5l-6 1.5M5 17V7v6.5Z"/></svg>
-                    </button>
+                    <div className="flex items-center gap-x-6">
+                        <button
+                            type="button"
+                            className="text-sm font-semibold leading-6 text-slate-200"
+                        >
+                            Reset
+                        </button>
+                        <button
+                            type="submit"
+                            className="px-3 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ffffff" d="M3 20V4l19 8M5 17l11.85-5L5 7v3.5l6 1.5l-6 1.5M5 17V7v6.5Z"/></svg>
+                        </button>
+                    </div>
                 </div>
             </form>
         </main>
